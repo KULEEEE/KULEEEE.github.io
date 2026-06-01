@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -9,55 +9,96 @@
 <body>
   <main>
     <section class="hero">
-      <h1>Lee Jae-yeon</h1>
-      <p>Graphics / Rendering Engineer</p>
-      <p>
-        In-house Engine · Unity Renderer · Shader Pipeline · GPU Optimization · AI Agent Tools
-      </p>
+      <div class="hero-copy">
+        <h1>이재연 <span>Lee Jae-yeon</span></h1>
+        <p class="role">Graphics / Engine Software Engineer</p>
+        <p>
+          Windows, Android, iOS 등 다양한 플랫폼을 지원하는 자체 엔진 개발 경험이 있는
+          그래픽스/엔진 소프트웨어 엔지니어입니다.
+        </p>
 
-      <div class="links">
-        <a href="assets/resume.pdf">Resume PDF</a>
-        <a href="https://github.com/KULEEEE">GitHub</a>
-        <a href="mailto:zx4510vb@gmail.com">Email</a>
+        <div class="contact">
+          <p><strong>이메일</strong>: <a href="mailto:kh0410le@naver.com">kh0410le@naver.com</a></p>
+          <p><strong>GitHub</strong>: <a href="https://github.com/KULEEEE">https://github.com/KULEEEE</a></p>
+          <p><strong>블로그</strong>: <a href="https://your-blog-post-link.example.com">https://your-blog-post-link.example.com</a></p>
+        </div>
       </div>
+
+      <img class="profile-photo" src="assets/profile.jpg" alt="이재연 프로필 사진" />
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="info-list">
+        <li><strong>Core Languages</strong>: C++ (Modern C++), C#, Python</li>
+        <li><strong>Graphics API, Shading</strong>: Vulkan, Metal, OpenGL ES, HLSL/GLSL/MSL</li>
+        <li><strong>Profiling & Debugging</strong>: XCode GPU Trace, Android GPU Inspector, RenderDoc</li>
+        <li><strong>Tool</strong>: Unity, Unreal Engine 5</li>
+      </ul>
     </section>
 
     <section>
       <h2>Experience</h2>
-      <h3>Com2uS — Graphics / Renderer Developer</h3>
-      <p>
-        자체 엔진 및 Unity 기반 프로젝트에서 렌더링 파이프라인, 셰이더 시스템,
-        GPU 최적화, 렌더링 자동화 도구 개발을 담당했습니다.
-      </p>
+      <div class="experience-list">
+        <article class="experience-entry">
+          <h3>펄어비스 인턴 <span>(2021.07 - 2021.12)</span></h3>
+          <p>게임 엔진 1실</p>
+          <ul>
+            <li>DirectX 12 기반 펄어비스 자체 엔진의 디버깅 툴 및 애드온을 개발했습니다.</li>
+            <li>Blender에서 작업한 Skinned Mesh를 자체 엔진의 3D Object 파일 형식으로 Import/Export하는 애드온을 개발했습니다.</li>
+          </ul>
+        </article>
+
+        <article class="experience-entry">
+          <h3>컴투스 <span>(2022.03 - 2025.11)</span></h3>
+          <p>게임엔진개발팀 Render</p>
+          <ul>
+            <li>C++ 기반 자체 엔진의 렌더링 성능 최적화를 위해 멀티스레드 렌더러와 데이터 지향 Render Database를 구축했습니다.</li>
+            <li>Shader 관리 효율을 높이기 위한 Shader System을 설계했습니다.</li>
+            <li>플랫폼별 Render Tech 도입과 다양한 기기의 GPU 아키텍처에 맞춘 최적화 연구를 수행했습니다.</li>
+          </ul>
+        </article>
+
+        <article class="experience-entry">
+          <h3>컴투스 <span>(2025.12 - 현재)</span></h3>
+          <p>도원암귀: 인페르노 렌더팀</p>
+          <ul>
+            <li>Stylized PBR 기반 Unity Built-in Render Pipeline의 유지 보수 및 기능 개선을 담당하고 있습니다.</li>
+            <li>Windows, Android, iOS, macOS 등 다양한 플랫폼에서 GPU Profiling을 수행하고 렌더링 병목 분석 및 기기별 성능 최적화를 진행하고 있습니다.</li>
+            <li>프로젝트 내 Agent 적용을 위한 하네스 기반 실행 구조를 설계하고 Agent 자동화 툴을 개발하고 있습니다.</li>
+          </ul>
+        </article>
+      </div>
     </section>
-
     <section>
-      <h2>Projects</h2>
+      <h2>Portfolio</h2>
 
       <article>
-        <h3>Lv1 Engine Renderer</h3>
+        <h3>Portfolio PDF</h3>
         <p>
-          C++ 기반 자체 엔진에서 Multi-threaded Renderer, Render Database,
-          Key Batching, GPU Instancing 등을 설계하고 구현했습니다.
+          <a href="assets/portfolio.pdf">assets/portfolio.pdf</a> 파일을 교체하면 PDF 포트폴리오로 연결됩니다.
         </p>
       </article>
 
       <article>
-        <h3>Shader Cross Compilation Pipeline</h3>
+        <h3>Portfolio Link</h3>
         <p>
-          Unity ShaderLab 스타일의 작성 환경과 Slang 기반 SPIR-V / GLSL / MSL
-          Cross Compilation 파이프라인을 구축했습니다.
+          <a href="https://your-portfolio-link.example.com">https://your-portfolio-link.example.com</a>
+          주소를 실제 포트폴리오 링크로 바꾸면 됩니다.
         </p>
       </article>
 
       <article>
-        <h3>Unity Frame Debugger Agent Tool</h3>
+        <h3>Blog Post</h3>
         <p>
-          Unity Frame Debugger의 Render Target, Draw Call, Pipeline State 정보를
-          AI Agent에게 전달해 렌더링 문제를 분석하는 도구를 개발했습니다.
+          <a href="https://your-blog-post-link.example.com">https://your-blog-post-link.example.com</a>
+          주소를 대표 블로그 글 링크로 바꾸면 됩니다.
         </p>
       </article>
     </section>
   </main>
 </body>
 </html>
+
+
+
