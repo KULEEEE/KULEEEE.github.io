@@ -84,29 +84,35 @@
       </div>
     </section>
     <section>
-      <h2>Portfolio</h2>
+      <h2>Posts</h2>
+      <div class="post-list">
+        <article class="post-card">
+          <p class="post-meta">DirectX 12 / Nsight Graphics</p>
+          <h3><a href="https://wiyul.tistory.com/7">커스텀 엔진에서 PCIe 병목 분석과 GPU-Local Resource Upload Path 개선</a></h3>
+          <p>
+            Sponza 씬 프로파일링 중 발견한 PCIe 병목을 분석하고, CPU-visible resource 구조를
+            GPU-local resource와 staging upload path로 개선한 과정을 정리했습니다.
+          </p>
+        </article>
 
-      <article>
-        <h3>Portfolio PDF</h3>
-        <p>
-          <a href="assets/portfolio.pdf">assets/portfolio.pdf</a> 파일을 교체하면 PDF 포트폴리오로 연결됩니다.
-        </p>
-      </article>
+        <article class="post-card">
+          <p class="post-meta">Rendering Pipeline / Early-Z</p>
+          <h3><a href="https://wiyul.tistory.com/6">커스텀 렌더링 엔진에 Depth Pre-Pass 구현하기</a></h3>
+          <p>
+            자체 렌더링 엔진에 Depth Pre-Pass를 도입하며 Depth Texture 생성, Render Pass 분리,
+            Early-Z 최적화 흐름을 엔진 구조에 맞춰 설계한 내용을 다룹니다.
+          </p>
+        </article>
 
-      <article>
-        <h3>Portfolio Link</h3>
-        <p>
-          <a href="https://your-portfolio-link.example.com">https://your-portfolio-link.example.com</a>
-          주소를 실제 포트폴리오 링크로 바꾸면 됩니다.
-        </p>
-      </article>
-
-      <article>
-        <h3>Blog Post</h3>
-        <p>
-          <a href="https://wiyul.tistory.com/">https://wiyul.tistory.com/</a>
-        </p>
-      </article>
+        <article class="post-card">
+          <p class="post-meta">iOS / Shader Optimization</p>
+          <h3><a href="https://wiyul.tistory.com/5">[iOS] Shader 최적화 - Float Precision</a></h3>
+          <p>
+            모바일 GPU 환경에서 float과 half precision 선택이 ALU throughput, memory bandwidth,
+            register pressure에 주는 영향을 실제 셰이더 최적화 관점에서 정리했습니다.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 </body>
