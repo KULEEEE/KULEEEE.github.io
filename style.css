@@ -50,6 +50,11 @@ h1 span {
   font-weight: 700;
 }
 
+.intro {
+  color: #4b5563;
+  font-style: italic;
+}
+
 h2 {
   color: #3d8fe6;
   margin-top: 48px;
@@ -77,11 +82,6 @@ a {
 .contact p {
   margin: 0;
   padding: 8px 0;
-  border-bottom: 1px solid #d8dde6;
-}
-
-.contact p:first-child {
-  border-top: 1px solid #d8dde6;
 }
 
 .contact strong {
