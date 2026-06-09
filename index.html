@@ -86,32 +86,50 @@
     <section>
       <h2>Posts</h2>
       <div class="post-list">
-        <article class="post-card">
-          <p class="post-meta">DirectX 12 / Nsight Graphics</p>
-          <h3><a href="https://wiyul.tistory.com/7">커스텀 엔진에서 PCIe 병목 분석과 GPU-Local Resource Upload Path 개선</a></h3>
-          <p>
-            Sponza 씬 프로파일링 중 발견한 PCIe 병목을 분석하고, CPU-visible resource 구조를
-            GPU-local resource와 staging upload path로 개선한 과정을 정리했습니다.
-          </p>
-        </article>
+        <a class="post-card" href="https://wiyul.tistory.com/7" target="_blank" rel="noopener noreferrer">
+          <img class="post-thumbnail" src="assets/post-pcie.png" alt="" />
+          <span class="post-content">
+            <span class="post-site">WIYUL Develop Diary</span>
+            <span class="post-meta">DirectX 12 / Nsight Graphics</span>
+            <span class="post-title">커스텀 엔진에서 PCIe 병목 분석과 GPU-Local Resource Upload Path 개선</span>
+            <span class="post-summary">
+              Sponza 씬 프로파일링 중 발견한 PCIe 병목을 분석하고, CPU-visible resource 구조를
+              GPU-local resource와 staging upload path로 개선한 과정을 정리했습니다.
+            </span>
+          </span>
+        </a>
 
-        <article class="post-card">
-          <p class="post-meta">Rendering Pipeline / Early-Z</p>
-          <h3><a href="https://wiyul.tistory.com/6">커스텀 렌더링 엔진에 Depth Pre-Pass 구현하기</a></h3>
-          <p>
-            자체 렌더링 엔진에 Depth Pre-Pass를 도입하며 Depth Texture 생성, Render Pass 분리,
-            Early-Z 최적화 흐름을 엔진 구조에 맞춰 설계한 내용을 다룹니다.
-          </p>
-        </article>
+        <a class="post-card" href="https://wiyul.tistory.com/6" target="_blank" rel="noopener noreferrer">
+          <span class="post-thumbnail post-thumbnail-fallback depth-preview" aria-hidden="true">
+            <span class="preview-grid"></span>
+            <span class="preview-chip">Early-Z</span>
+          </span>
+          <span class="post-content">
+            <span class="post-site">WIYUL Develop Diary</span>
+            <span class="post-meta">Rendering Pipeline / Early-Z</span>
+            <span class="post-title">커스텀 렌더링 엔진에 Depth Pre-Pass 구현하기</span>
+            <span class="post-summary">
+              자체 렌더링 엔진에 Depth Pre-Pass를 도입하며 Depth Texture 생성, Render Pass 분리,
+              Early-Z 최적화 흐름을 엔진 구조에 맞춰 설계한 내용을 다룹니다.
+            </span>
+          </span>
+        </a>
 
-        <article class="post-card">
-          <p class="post-meta">iOS / Shader Optimization</p>
-          <h3><a href="https://wiyul.tistory.com/5">[iOS] Shader 최적화 - Float Precision</a></h3>
-          <p>
-            모바일 GPU 환경에서 float과 half precision 선택이 ALU throughput, memory bandwidth,
-            register pressure에 주는 영향을 실제 셰이더 최적화 관점에서 정리했습니다.
-          </p>
-        </article>
+        <a class="post-card" href="https://wiyul.tistory.com/5" target="_blank" rel="noopener noreferrer">
+          <span class="post-thumbnail post-thumbnail-fallback shader-preview" aria-hidden="true">
+            <span class="preview-code">half3</span>
+            <span class="preview-chip">FP16</span>
+          </span>
+          <span class="post-content">
+            <span class="post-site">WIYUL Develop Diary</span>
+            <span class="post-meta">iOS / Shader Optimization</span>
+            <span class="post-title">[iOS] Shader 최적화 - Float Precision</span>
+            <span class="post-summary">
+              모바일 GPU 환경에서 float과 half precision 선택이 ALU throughput, memory bandwidth,
+              register pressure에 주는 영향을 실제 셰이더 최적화 관점에서 정리했습니다.
+            </span>
+          </span>
+        </a>
       </div>
     </section>
   </main>
