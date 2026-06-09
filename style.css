@@ -188,14 +188,14 @@ a {
 
 .post-list {
   display: grid;
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
 }
 
 .post-card {
   margin: 0;
   display: grid;
-  grid-template-columns: 220px 1fr;
-  min-height: 156px;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
   padding: 0;
   background: #f7f9fc;
@@ -214,104 +214,20 @@ a {
 
 .post-thumbnail {
   width: 100%;
-  height: 100%;
-  min-height: 156px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   background: #d8dde6;
 }
 
-.post-thumbnail-fallback {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.post-thumbnail-fallback::before,
-.post-thumbnail-fallback::after {
-  position: absolute;
-  content: "";
-}
-
-.depth-preview {
-  background:
-    linear-gradient(135deg, rgba(36, 87, 166, 0.9), rgba(61, 143, 230, 0.38)),
-    linear-gradient(45deg, #172033, #ecf4ff);
-}
-
-.depth-preview::before {
-  inset: 24px 22px 34px;
-  border: 1px solid rgba(255, 255, 255, 0.68);
-  transform: skewY(-7deg);
-}
-
-.depth-preview::after {
-  right: 30px;
-  bottom: 28px;
-  width: 70px;
-  height: 70px;
-  border: 2px solid rgba(255, 255, 255, 0.72);
-  background: rgba(255, 255, 255, 0.14);
-  transform: rotate(18deg);
-}
-
-.shader-preview {
-  background:
-    linear-gradient(135deg, rgba(32, 33, 36, 0.9), rgba(36, 87, 166, 0.58)),
-    #202124;
-}
-
-.shader-preview::before {
-  inset: 22px;
-  border-left: 3px solid rgba(61, 143, 230, 0.85);
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.22) 0 2px,
-    transparent 2px 14px
-  );
-}
-
-.shader-preview::after {
-  right: 26px;
-  top: 28px;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: rgba(61, 143, 230, 0.55);
-  box-shadow: -36px 52px 0 rgba(255, 255, 255, 0.18);
-}
-
-.preview-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
-  background-size: 22px 22px;
-}
-
-.preview-code,
-.preview-chip {
-  position: absolute;
-  z-index: 1;
-  color: #ffffff;
+.post-thumbnail-default {
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: #eef2f7;
+  color: #667085;
+  font-size: 14px;
   font-weight: 700;
-}
-
-.preview-code {
-  left: 28px;
-  bottom: 26px;
-  font-family: Consolas, "Courier New", monospace;
-  font-size: 30px;
-}
-
-.preview-chip {
-  right: 18px;
-  top: 18px;
-  padding: 5px 9px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
-  font-size: 12px;
+  text-align: center;
 }
 
 .post-content {
@@ -368,15 +284,6 @@ a {
   .experience-list,
   .education-entry {
     padding: 16px 18px 16px 34px;
-  }
-
-  .post-card {
-    grid-template-columns: 1fr;
-  }
-
-  .post-thumbnail {
-    aspect-ratio: 16 / 9;
-    min-height: 0;
   }
 }
 
